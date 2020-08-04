@@ -1,0 +1,143 @@
+// FONT VARIABLES
+$font-primary: 'Muli', sans-serif;
+
+// COLOR VARIABLES
+$color-primary: #131313;
+$color-primary-light: #5a5a5a;
+
+$color-secondary: #ec1c24;
+$color-secondary-light: #F96a70;
+
+// BASE
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing: border-box;
+    font-size: 62.5%; // 1rem = 10px; 10px(what we want for easier math) / 16px(browser default) = 0.625
+
+    @media only screen and (max-width: 1170px) {
+        font-size: 55%;
+    }
+}
+
+body {
+    font-family: $font-primary;
+    font-weight: 400;
+    color: $font-primary;
+    line-height: 1.5;
+    font-size: 1.8rem;
+}
+
+
+////////////////////////////
+// BUTTONS & INPUT
+
+.btn {
+    text-decoration: none;
+    border: none;
+    font-family: inherit;
+    font-size: 1.8rem;
+    font-weight: 700;
+    border-radius: .4rem;
+    padding: 1.2rem 2rem;
+    cursor: pointer;
+
+    &__main-nav {
+        background-color: $color-primary;
+        color: white;
+    }
+
+    &__main-nav:hover {
+        background-color: $color-secondary;
+        box-shadow: 3px 3px 10px rgba(0, 0, 0, .16);
+    }
+
+    &__large--secondary {
+        background-color: $color-secondary;
+        color: white;
+        font-size: 2rem;
+        padding: 1.6rem 2.5rem;
+    }
+
+    &__large--secondary:hover {
+        background-color: $color-secondary-light;
+        box-shadow: 3px 3px 10px rgba(0, 0, 0, .16);
+        color: $color-primary;
+    }
+
+    &__large--secondary-v2 {
+        background-color: white;
+        color: $color-secondary;
+        font-size: 2rem;
+        padding: 1.6rem 2.5rem;
+    }
+
+    &__large--secondary-v2:hover {
+        background-color: $color-secondary-light;
+        color: $color-primary;
+    }
+
+}
+
+
+.input-field {
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    height: 4.8rem;
+    font-family: inherit;
+    font-size: 1.8rem;
+    font-weight: 400;
+    border-radius: .4rem;
+    padding-left: 2rem;
+    color: $color-primary;
+
+    &::placeholder {
+        color: $color-primary-light;
+    }
+}
+
+////////////////////////////
+// TYPOGRAPHY
+
+.heading-main {
+    font-size: 5.4rem;
+    line-height: 1.25;
+    font-weight: 700;
+    margin-bottom: 2.5rem;
+    max-width: 67rem;
+    color: white;
+}
+
+.heading-main-2 {
+    font-size: 4.2rem;
+    line-height: 1.25;
+    font-weight: 700;
+    margin-bottom: 2.5rem;
+    color: $color-primary;
+}
+
+.heading-secondary {
+    font-size: 4.2rem;
+    line-height: 1.25;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: $color-secondary;
+}
+
+.subheading {
+    font-size: 2.4rem;
+    line-height: 1.333;
+    margin-bottom: 4rem;
+}
+
+.body__text {
+    font-size: 1.8rem;
+    line-height: 1.5;
+    color: $color-primary-light;
+}
