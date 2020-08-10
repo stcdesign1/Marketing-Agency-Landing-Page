@@ -114,7 +114,7 @@ body {
     grid-row: 2 / 3;
     z-index: -1;
     overflow: hidden;
-    background-image: url(../img/header-1.jpg);
+    background-image: url(./img/header-1.jpg);
     background-position: center center;
     background-size: cover; }
   .header__nav {
